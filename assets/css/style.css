@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+
+:root {
+  --transition: 0.3s ease-in;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  transition: var(--transition);
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+body {
+  margin: 0.5rem auto;
+  max-width: 1180px;
+}
+.container {
+  max-width: 1180px;
+  max-height: 5340px;
+  display: grid;
+}
+/* some  similar items  in body -------------------------------------------------   */
+section {
+  margin: 3rem 0;
+
+}
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 3.6rem;
+  color: #101130;
+}
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #606176;
+}
+b {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #101130;
+}
+button {
+  border-radius: 1rem;
+  font-family: "Inter";
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+/*------------------------------------------------------ buttons hover essects ---- -----  */
+button:hover {
+  box-shadow: 3px 3px gray;
+  background-color: #f77e53;
+  color: white;
+}
+.pricetag1:hover {
+  box-shadow: 3px 3px rgb(38, 68, 186);
+  border-radius: 30px;
+
+}
+.pricetag2:hover {
+  box-shadow: 3px 3px rgb(230, 207, 3);
+  border-radius: 30px;
+ 
+}
+.pricetag3:hover {
+  box-shadow: 3px 3px rgb(213, 13, 46);
+  border-radius: 30px;
+
+}
+/* ------------------------------------------------------navigation bar starts here -------------------------- - / */
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  float: left;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 1rem;
+  font-family: "inter";
+}
+.btnblue {
+  width: 125px;
+  height: 50px;
+  background: #e8f1ff;
+  text-align: center;
+  line-height: 1.2rem;
+  color: #2378ff;
+  font-size: 1rem;
+}
+.navbar ul li :hover {
+  color: orangered;
+ text-decoration-line: underline;
+}
+.btnblue:hover {
+  background-color: #2378ff;
+  color: #e8f1ff;
+}
+/* header css ----------------------------------------------------------------------------------------  */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+.header-content > p {
+  margin-top: 1rem;
+}
+#getstart {
+  margin-top: 1rem;
+  background: #f77e53;
+  border-radius: 1rem;
+  width: 200px;
+  height: 62px;
+  color: #fef4f1;
+}
+#getstart:hover {
+  background-color: #e8f1ff;
+  color: #f77e53;
+}
+/* university logo section start here------------------------------------------------------- ------ / */
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(5 ,1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  width: 100%;
+}
+.worldwide {
+  margin: 0 auto;
+}
+.universities {
+  margin: 0 0.1rem;
+}
+/* universities logo section end here  ---------------------------------------  */
+/* how it work start --------------------------------------------------------- */
+
+.learning {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas:
+    "imga how how"
+    " imga gri1 gri2 "
+    " imga gri3 gri4 ";
+}
+#box1 {
+  grid-area: imga;
+}
+#box2 {
+  grid-area: how;
+}
+#box3 {
+  grid-area: gri1;
+}
+#box4 {
+  grid-area: gri2;
+}
+#box5 {
+  grid-area: gri3;
+}
+#box6 {
+  grid-area: gri4;
+}
+.icon {
+  background: #d2f1e1;
+  border-radius: 16px;
+  width: 70px;
+  height: 70px;
+}
+.learning b {
+  font-family: "inter";
+}
+.learning p {
+  font-size: 1rem;
+}
+.icon img {
+  margin: 1rem;
+}
+/* --------------------------how it works onlone courses start here ----------------------  */
+
+.course-btn > a {
+  text-decoration: none;
+  color: #0062ff;
+}
+.course {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 1fr;
+  grid-template-areas:
+    "heading heading button"
+    "card1 card2 card3";
+}
+
+.cart1data {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #606176;
+  margin-top: 18px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.coursehead h2 {
+  grid-area: heading;
+}
+
+.course-btn {
+  grid-area: button;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: "Inter";
+}
+
+.card-1 {
+  grid-area: card1;
+}
+.card-2 {
+  grid-area: card2;
+}
+.card-3 {
+  grid-area: card3;
+}
+
+.course-card {
+  margin: 50px 0 0px 70px;
+  width: 270px;
+  height: 390px;
+  background: #ffffff;
+  box-shadow: 0px 20px 35px -5px rgba(0, 0, 0, 0.03);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.addbtn {
+  width: 240px;
+  height: 40px;
+  border: 1px solid #2076ff;
+  border-radius: 7px;
+  font-size: 1rem;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #2076ff;
+  background-color: white;
+}
+#blueaddtocart {
+  background-color: #2076ff;
+  color: white;
+}
+.course-btn {
+  border: 1px solid #2076ff;
+  box-sizing: border-box;
+  width: 180px;
+  height: 60px;
+  border-radius: 12px;
+  color: #2076ff;
+  font-size: 1rem;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #2076ff;
+}
+
+/* features section starts here --------------------------------------------------------------------- */
+.featurescontainer {
+  display: grid;
+  width: 100%;
+}
+.features {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.features h2 {
+  margin: 2rem 0;
+}
+.features > p {
+  font-size: 0.1rem;
+  margin: 2.5rem 0;
+}
+/* features end here --------------------- */
+/* testimonial starts here ------------------------------- */
+
+.comments {
+  display: flex;
+  justify-content: space-around;
+}
+.content {
+  margin: 2.5rem 0;
+  display: flex;
+}
+.comments {
+  padding: 0 5rem;
+}
+.comments b {
+  font-size: 1rem;
+}
+.comments p {
+  font-size: 1rem;
+}
+/* pricing section starts here ---- ---- --- ---  -------------------- */
+/* pricing container css starts here -------------------------------------------  */
+
+.pricehead {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0;
+}
+
+.priceheadmainbtn {
+  flex: 3;
+}
+#pbtn {
+  font-size: 18px;
+  line-height: 1.2rem;
+  text-align: center;
+  float: right;
+  color: #2076ff;
+  width: 160px;
+  height: 60px;
+  background-color: white;
+  border: 1px solid #2076ff;
+  border-radius: 12px;
+}
+.pricecard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.cardbox {
+  width: 305px;
+  height: 587px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.pricetag2 {
+  background: #fef0c3;
+  border-radius: 1rem;
+}
+.pricetag3 {
+  border-radius: 1rem;
+  background: #fee6dc;
+}
+#bluebox2 {
+  flex: 1;
+  width: 305px;
+  height: 100px;
+  background-color: #f6c07a;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 38px;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+#nintyfive {
+  flex: 1;
+  position: relative;
+  width: 58px;
+  height: 38px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 38px;
+  color: #101130;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+#bluebox {
+  flex: 1;
+  width: 305px;
+  height: 100px;
+  background-color: #0062ff;
+   font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem; 
+  line-height: 38px;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#pointscover {
+  flex: 4;
+  height: 186px;
+}
+#pointscover2 {
+  flex: 4;
+  height: 186px;
+}
+#pointscover2 ul li::marker {
+  color: #f6c07a;
+}
+
+ul li {
+  margin-top: 1rem;
+  color: black;
+  list-style-type: disc;
+  height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #606176;
+}
+ul li::marker {
+  color: #0062ff;
+}
+
+#buyplan #planbtn {
+  width: 260px;
+  height: 70px;
+  background-color: white;
+  border: 1px solid #2076ff;
+  border-radius: 14px;
+  text-align: center;
+  flex: 1;
+  color: #2076ff;
+}
+#pointscover {
+  flex: 5;
+}
+#buyplan {
+  flex: 3;
+  margin-top: 50px;
+}
+#buyplan2 {
+  flex: 3;
+  margin-top: 50px;
+}
+#pointscover3 {
+  flex: 4;
+  height: 186px;
+}
+#pointscover3 ul li::marker {
+  color: #f77e53;
+}
+#buyplan2 #planbtn2 {
+  width: 260px;
+  height: 70px;
+  background-color: #fef0c3;
+  border: 1px solid #f6c07a;
+  border-radius: 14px;
+  text-align: center;
+  flex: 1;
+  color: #f6c07a;
+}
+#buyplan3 {
+  flex: 3;
+  margin-top: 50px;
+}
+#buyplan3 #planbtn3 {
+  width: 260px;
+  height: 70px;
+  background-color: #f77e53;
+  border: 1px solid #f6c07a;
+  border-radius: 14px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 24px;
+  text-align: center;
+  flex: 1;
+  color: white;
+}
+#bluebox3 {
+  flex: 1;
+  width: 305px;
+  height: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 38px;
+  background: #f77e53;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+.pricecard button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+}
+/* pricing css end here ----------------------------------------- */
+/* footer section css starts here     ------    */
+.footer {
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr 1fr;
+  column-gap: 5rem;
+  margin: 3rem 0;
+}
+.footer ul li {
+  list-style-type: none;
+}
+.footer ul li:nth-child(1) {
+  text-decoration: none;
+  color: black;
+}
+footer b:hover,
+li:hover {
+  color: #0062ff;
+}
+
+/* copyright----------------------------------------------------------  */
+#copyright {
+  font-size: 1.1rem;
+}
+/* media stars ------------------------------------------------------------- */
+@media only screen and (max-width: 721px) {
+  .btnblue {
+    display: none;
+  }
+  /* .nav-item {
+    display: none;
+  } */
+ .navbar{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+ }
+}
+
+@media only screen and (max-width: 980px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* header media start here -------------  */
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+/* logo part media start here    */
+  .logos {
+    grid-template-rows: 20% 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .worldwide {
+    margin-top: 3rem;
+  }
+  .universities {
+    margin-top: 2rem;
+  }
+  /* learning part media start here  */
+  .learning {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 20%);
+    margin-top: 0.1rem;
+    grid-template-areas:
+      "how"
+      "imga"
+      "imga"
+      "gri1"
+      "gri2"
+      "gri3"
+      "gri4";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .icon {
+    margin: 0 auto;
+  }
+  .course {
+    margin-top: 29rem;
+    margin-bottom: -45rem;
+  }
+  .course {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 5% 1fr 1fr 1fr;
+    grid-template-areas:
+      "heading"
+      "button"
+      "card1"
+      "card2"
+      "card3"
+      "card3";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .course-btn {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-area: button;
+  }
+
+  .course-card {
+    margin-left: 0;
+  }
+/* featuring part media start here   */
+  .features {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 55rem;
+  }
+  .features h2 {
+    margin: 2rem 0;
+  }
+  .features > p {
+    font-size: 0.1rem;
+    margin: 2.5rem 0;
+  }
+  /* comments part media start here  */
+  .comments {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.3rem;
+  }
+  .comments b {
+    font-size: 0.9rem;
+    margin: 0.8rem 0;
+  }
+  .comments p {
+    font-size: 0.9rem;
+    margin: 0.8rem 0;
+  }
+  .comments img {
+    margin: 0.8rem 0;
+  }
+  .content {
+    justify-content: center;
+    text-align: center;
+  }
+  /* pricing card media start here  */
+  .pricehead {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .pricecard {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  /* footer part media start here  */
+  .footer p {
+    margin-top: 1rem;
+  }
+  .footer {
+    margin: 3rem 0;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer ul li {
+    margin: 1rem;
+  }
+  #copyright {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+ 
+}
+/* media queries end here ------------------- */
