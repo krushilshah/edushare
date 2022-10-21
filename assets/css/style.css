@@ -580,7 +580,12 @@ li:hover {
   
  }
 }
+@media only screen and (max-width: 400px){
+  nav ul li{
+   font-size: 0.5rem;
+  }
 
+}
 @media only screen and (max-width: 980px) {
   img {
     max-width: 100%;
