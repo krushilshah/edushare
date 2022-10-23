@@ -26,17 +26,16 @@ body {
 /* some  similar items  in body -------------------------------------------------   */
 section {
   margin: 3rem 0;
-
 }
-h1 {
+h1 ,h2 ,h3 ,h4 ,h5 ,h6{
   font-family: "Inter";
   font-style: normal;
+}
+h1 {
   font-size: 3.6rem;
   color: #101130;
 }
 h2 {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 2.2rem;
 }
@@ -64,6 +63,7 @@ button {
   font-size: 1rem;
   letter-spacing: -0.01em;
 }
+
 /*------------------------------------------------------ buttons hover essects ---- -----  */
 button:hover {
   box-shadow: 3px 3px gray;
@@ -73,20 +73,17 @@ button:hover {
 .pricetag1:hover {
   box-shadow: 3px 3px rgb(38, 68, 186);
   border-radius: 30px;
-
 }
 .pricetag2:hover {
   box-shadow: 3px 3px rgb(230, 207, 3);
   border-radius: 30px;
- 
 }
 .pricetag3:hover {
   box-shadow: 3px 3px rgb(213, 13, 46);
   border-radius: 30px;
-
 }
 /* ------------------------------------------------------navigation bar starts here -------------------------- - / */
-.navbar {
+.navigation-bar{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -102,7 +99,7 @@ nav a {
   margin: 0 1rem;
   font-family: "inter";
 }
-.btnblue {
+.nav-btn {
   width: 125px;
   height: 50px;
   background: #e8f1ff;
@@ -111,29 +108,29 @@ nav a {
   color: #2378ff;
   font-size: 1rem;
 }
-.navbar ul li :hover {
+.navigation-bar ul li :hover {
   color: orangered;
- text-decoration-line: underline;
+  text-decoration-line: underline;
 }
-.btnblue:hover {
+.nav-btn:hover {
   background-color: #2378ff;
   color: #e8f1ff;
 }
 /* header css ----------------------------------------------------------------------------------------  */
-.header {
+.hero-container {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
-.header-content {
+.hero-main-content {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.1rem;
 }
-.header-content > p {
+.hero-main-content > p {
   margin-top: 1rem;
 }
-#getstart {
+#hero-btn{
   margin-top: 1rem;
   background: #f77e53;
   border-radius: 1rem;
@@ -141,29 +138,29 @@ nav a {
   height: 62px;
   color: #fef4f1;
 }
-#getstart:hover {
+#hero-btn:hover {
   background-color: #e8f1ff;
   color: #f77e53;
 }
 /* university logo section start here------------------------------------------------------- ------ / */
 
-.logos {
+.universities-container{
   display: grid;
-  grid-template-columns: repeat(5 ,1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
   width: 100%;
 }
-.worldwide {
+.university-content{
   margin: 0 auto;
 }
-.universities {
+.university-logos{
   margin: 0 0.1rem;
 }
 /* universities logo section end here  ---------------------------------------  */
 /* how it work start --------------------------------------------------------- */
 
-.learning {
+.learning-container {
   display: grid;
   gap: 5px;
   grid-template-columns: 40% 30% 30%;
@@ -191,19 +188,16 @@ nav a {
 #box6 {
   grid-area: gri4;
 }
-.icon {
+.icon-learning{
   background: #d2f1e1;
   border-radius: 16px;
   width: 70px;
   height: 70px;
 }
-.learning b {
-  font-family: "inter";
-}
-.learning p {
+.learning-container p {
   font-size: 1rem;
 }
-.icon img {
+.icon-learning img {
   margin: 1rem;
 }
 /* --------------------------how it works onlone courses start here ----------------------  */
@@ -212,7 +206,7 @@ nav a {
   text-decoration: none;
   color: #0062ff;
 }
-.course {
+.course-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30% 1fr;
@@ -221,7 +215,7 @@ nav a {
     "card1 card2 card3";
 }
 
-.cart1data {
+.cart1-data {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -233,20 +227,9 @@ nav a {
   margin-bottom: 5px;
   margin-left: 20px;
 }
-
 .coursehead h2 {
   grid-area: heading;
 }
-
-.course-btn {
-  grid-area: button;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  margin: 0 auto;
-  background: #ffffff;
-  font-family: "Inter";
-}
-
 .card-1 {
   grid-area: card1;
 }
@@ -269,7 +252,7 @@ nav a {
   justify-content: space-around;
 }
 
-.addbtn {
+.add-btn {
   width: 240px;
   height: 40px;
   border: 1px solid #2076ff;
@@ -285,8 +268,13 @@ nav a {
   color: white;
 }
 .course-btn {
+  grid-area: button;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: "Inter";
   border: 1px solid #2076ff;
-  box-sizing: border-box;
   width: 180px;
   height: 60px;
   border-radius: 12px;
@@ -295,15 +283,12 @@ nav a {
   line-height: 22px;
   text-align: center;
   letter-spacing: -0.01em;
-  color: #2076ff;
+  
 }
 
 /* features section starts here --------------------------------------------------------------------- */
-.featurescontainer {
-  display: grid;
-  width: 100%;
-}
-.features {
+
+.features-container{
   width: 100%;
   background-color: white;
   display: flex;
@@ -311,43 +296,42 @@ nav a {
   justify-content: space-between;
   margin-top: 2rem;
 }
-.features h2 {
+.features-container h2 {
   margin: 2rem 0;
 }
-.features > p {
+.features-container > p {
   font-size: 0.1rem;
   margin: 2.5rem 0;
 }
 /* features end here --------------------- */
 /* testimonial starts here ------------------------------- */
 
-.comments {
+.review-comments {
   display: flex;
   justify-content: space-around;
+  padding: 0 5rem;
 }
-.content {
+.review-heading {
   margin: 2.5rem 0;
   display: flex;
 }
-.comments {
-  padding: 0 5rem;
-}
-.comments b {
+
+.review-comments b {
   font-size: 1rem;
 }
-.comments p {
+.review-comments p {
   font-size: 1rem;
 }
 /* pricing section starts here ---- ---- --- ---  -------------------- */
 /* pricing container css starts here -------------------------------------------  */
 
-.pricehead {
+.pricing-header {
   display: flex;
   flex-direction: row;
   margin: 3rem 0;
 }
 
-.priceheadmainbtn {
+.pricing-main-btn {
   flex: 3;
 }
 #pbtn {
@@ -362,7 +346,7 @@ nav a {
   border: 1px solid #2076ff;
   border-radius: 12px;
 }
-.pricecard {
+.pricing-card {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -372,20 +356,19 @@ nav a {
   margin: auto;
 }
 
-.cardbox {
+.card-box {
   width: 305px;
   height: 587px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  
 }
-.pricetag2 {
+.pricetag-2 {
   background: #fef0c3;
   border-radius: 1rem;
 }
-.pricetag3 {
+.pricetag-3 {
   border-radius: 1rem;
   background: #fee6dc;
 }
@@ -404,30 +387,25 @@ nav a {
   text-align: center;
   color: #ffffff;
 }
-#nintyfive {
+#amount {
   flex: 1;
-  position: relative;
-  width: 58px;
-  height: 38px;
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 38px;
+  font-family: "Inter";  
+  font-size: 2.5rem; 
   color: #101130;
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 3.5rem;
 }
 
-#bluebox {
+#bluebox-1 {
   flex: 1;
   width: 305px;
   height: 100px;
   background-color: #0062ff;
-   font-family: "Inter";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
   line-height: 38px;
   padding: 30px;
   border-top-left-radius: 15px;
@@ -436,15 +414,15 @@ nav a {
   color: #ffffff;
 }
 
-#pointscover {
+#points-cover-1 {
   flex: 4;
   height: 186px;
 }
-#pointscover2 {
+#points-cover-2 {
   flex: 4;
   height: 186px;
 }
-#pointscover2 ul li::marker {
+#points-cover-2 ul li::marker {
   color: #f6c07a;
 }
 
@@ -473,9 +451,7 @@ ul li::marker {
   flex: 1;
   color: #2076ff;
 }
-#pointscover {
-  flex: 5;
-}
+
 #buyplan {
   flex: 3;
   margin-top: 50px;
@@ -484,11 +460,11 @@ ul li::marker {
   flex: 3;
   margin-top: 50px;
 }
-#pointscover3 {
+#points-cover-3 {
   flex: 4;
   height: 186px;
 }
-#pointscover3 ul li::marker {
+#points-cover-3 ul li::marker {
   color: #f77e53;
 }
 #buyplan2 #planbtn2 {
@@ -536,27 +512,23 @@ ul li::marker {
   text-align: center;
   color: #ffffff;
 }
-.pricecard button {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-}
+
 /* pricing css end here ----------------------------------------- */
 /* footer section css starts here     ------    */
-.footer {
+.footer-container {
   display: grid;
   grid-template-columns: 25% 1fr 1fr 1fr;
   column-gap: 5rem;
   margin: 3rem 0;
 }
-.footer ul li {
+ .footer-container ul li {
   list-style-type: none;
-}
-.footer ul li:nth-child(1) {
+} 
+.footer-container ul li:nth-child(1) {
   text-decoration: none;
   color: black;
 }
-footer b:hover,
+.footer-container b:hover,
 li:hover {
   color: #0062ff;
 }
@@ -566,49 +538,41 @@ li:hover {
   font-size: 1.1rem;
 }
 /* media stars ------------------------------------------------------------- */
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+ 
 @media only screen and (max-width: 721px) {
-  .btnblue {
+  .nav-btn {
     display: none;
   }
-  /* .nav-item {
-    display: none;
-  } */
- .navbar{
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  
- }
+ 
+  .navigation-bar {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
-@media only screen and (max-width: 400px){
-  nav ul li{
-   font-size: 0.5rem;
-  }
-
 }
 @media only screen and (max-width: 980px) {
+  html {
+    font-size: 14px;
+  }
   img {
     max-width: 100%;
     height: auto;
   }
   /* header media start here -------------  */
-  .header {
+  .hero-container {
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
   }
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1rem;
-  }
-/* logo part media start here    */
-  .logos {
+ 
+  /* logo part media start here    */
+  .universities-container{
     grid-template-rows: 20% 1fr;
     grid-template-columns: 1fr;
     margin-top: 5rem;
@@ -616,14 +580,14 @@ li:hover {
     align-items: center;
     text-align: center;
   }
-  .worldwide {
+  .university-content {
     margin-top: 3rem;
   }
-  .universities {
+  .university-logos {
     margin-top: 2rem;
   }
   /* learning part media start here  */
-  .learning {
+  .learning-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 20%);
     margin-top: 0.1rem;
@@ -639,28 +603,27 @@ li:hover {
     align-items: center;
     text-align: center;
   }
-  .icon {
+  .icon-learning {
     margin: 0 auto;
   }
-  .course {
-    margin-top: 29rem;
-    margin-bottom: -45rem;
-  }
-  .course {
+  /* course container start here  */
+  .course-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 5% 1fr 1fr 1fr;
     grid-template-areas:
-      "heading"
-      "button"
-      "card1"
-      "card2"
-      "card3"
-      "card3";
+    "heading"
+    "button"
+    "card1"
+    "card2"
+    "card3"
+    "card3";
     align-items: center;
     justify-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 29rem;
+    margin-bottom: -45rem;
   }
 
   .course-btn {
@@ -672,74 +635,69 @@ li:hover {
   .course-card {
     margin-left: 0;
   }
-/* featuring part media start here   */
-  .features {
+  /* featuring part media start here   */
+  .features-container {
     flex-direction: column;
     text-align: center;
     align-items: center;
     gap: 3rem;
     margin-top: 55rem;
   }
-  .features h2 {
+  .features-container h2 {
     margin: 2rem 0;
   }
-  .features > p {
-    font-size: 0.1rem;
+  .features-container > p {
     margin: 2.5rem 0;
   }
   /* comments part media start here  */
-  .comments {
+  .review-comments{
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     padding: 0.3rem;
   }
-  .comments b {
-    font-size: 0.9rem;
+  .review-comments b {
     margin: 0.8rem 0;
   }
-  .comments p {
-    font-size: 0.9rem;
+  .review-comments p {
     margin: 0.8rem 0;
   }
-  .comments img {
+  .review-comments img {
     margin: 0.8rem 0;
   }
-  .content {
+  .review-heading {
     justify-content: center;
     text-align: center;
   }
   /* pricing card media start here  */
-  .pricehead {
+  .pricing-header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 1rem;
   }
-  .pricecard {
+  .pricing-card {
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 1rem;
   }
   /* footer part media start here  */
-  .footer p {
+  .footer-container p {
     margin-top: 1rem;
   }
-  .footer {
+  .footer-container {
     margin: 3rem 0;
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .footer ul li {
+  .footer-container ul li {
     margin: 1rem;
   }
   #copyright {
-    font-size: 0.7rem;
     text-align: center;
   }
- 
 }
 /* media queries end here ------------------- */

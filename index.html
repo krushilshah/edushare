@@ -13,46 +13,45 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
     <!----------------- main container ---------------------------------  -->
     <div class="container">
         <!-- ------navbar menu starts here --------------------------------------  -->
         <nav>
-            <div class="container">
-                <div class="navbar">
-                    <h1 class="logo"><img src="./assets/images/logo.png" alt="logo"></h1>
-                    <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
-                        <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                    <a href="#"> <button class="btnblue">sign in</button></a>                    
-                </div>
+            <div class="navigation-bar">
+                <h1 class="logo"><img src="./assets/images/logo.png" alt="logo"></h1>
+                <ul class="navigation-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#"> <button class="nav-btn">sign in</button></a>
             </div>
         </nav>
         <!-- ----------navbar end here   ---------------------------- -----------    -->
         <!-- ----------hero section start here ------------------------------ -->
-        <header class="container">
-            <div class="header">
-                <div class="header-content">
+        <header>
+            <div class="hero-container">
+                <div class="hero-main-content">
                     <h1>Discover best classes for the best learning</h1>
                     <p><small>We designed Connections Academy to give <br> students all across the nation a tuition-free
                             online <br> public school that lets them learn.</small></p>
-                    <a href="#"><button id="getstart">Get started </button></a>
+                    <a href="#"><button id="hero-btn">Get started </button></a>
                     <p><small>Not sure when to start? <a href="#">learn more </a></small></p>
                 </div>
-                <div class="header-img"> <img src="./assets/images/imageandcard.png" alt="desktop"></div>
+                <div class="hero-img"> <img src="./assets/images/imageandcard.png" alt="desktop"></div>
             </div>
         </header>
         <!--------- hero section end here ----------------------------------------- -->
-        <section class="container" id="profile">
-            <div class="logos">
-                <div class="worldwide">
+        <section id="profile">
+            <div class="universities-container">
+                <div class="university-content">
                     <h1>400+</h1>
                     <p> <small>Universities worldwide <br> that partner with us</small> </p>
                 </div>
-                <div class="universities">
+                <div class="university-logos">
                     <img src="./assets/images/mcgill.png" alt="mcgill">
                 </div>
                 <div class="universities">
@@ -68,8 +67,8 @@
         </section>
         <!--------universities logoes section end here ------------------------------- -----  -->
         <!-- ---how it works section starts here -----------------------------    -->
-        <section class="container" >
-            <div class="learning">
+        <section>
+            <div class="learning-container">
                 <div class="col1" id="box1">
                     <img src="./assets/images/learniimage.png" alt="learning image">
                 </div>
@@ -77,30 +76,30 @@
                     <h2> How Our Online <br> Public School Works</h2>
                 </div>
                 <div class="col3" id="box3">
-                    <div class="icon"> <img src="./assets/images/one.png" alt="icon"></div> <br>
+                    <div class="icon-learning"> <img src="./assets/images/one.png" alt="icon"></div> <br>
                     <b>Virtual Learning </b>
                     <p>The only costs are for standard <br> school supplies and voluntary <br> field trips.</p>
                 </div>
                 <div class="col4" id="box4">
-                    <div class="icon"> <img src="./assets/images/outline.png" alt="icon"></div> <br>
+                    <div class="icon-learning"> <img src="./assets/images/outline.png" alt="icon"></div> <br>
                     <b>Meaningful Education</b>
                     <p>Many of our Connections <br> Academy schools have additional <br> accreditations.</p>
                 </div>
                 <div class="col5" id="box5">
-                    <div class="icon"> <img src="./assets/images/vector.png" alt="icon"></div> <br>
+                    <div class="icon-learning"> <img src="./assets/images/vector.png" alt="icon"></div> <br>
                     <b>Online Curriculum</b>
                     <p>Our curriculum prepares <br> students to go further in life by <br> giving them support.</p>
                 </div>
                 <div class="col6" id="box6">
-                    <div class="icon"><img src="./assets/images/two.png" alt="icon"></div> <br>
+                    <div class="icon-learning"><img src="./assets/images/two.png" alt="icon"></div> <br>
                     <b>Social Interraction</b>
                     <p>Students at Connections <br> Academy collaborate on projects <br> together.</p>
                 </div>
             </div>
         </section>
         <!------how our online public school works sectionstart-------- -->
-        <section class="container" id="courses">
-            <div class="course">
+        <section id="courses">
+            <div class="course-container">
                 <div class="coursehead">
                     <h2>How our online public school works</h2>
                 </div>
@@ -110,13 +109,13 @@
                 <div class="course-card card-1">
                     <img src="./assets/images/carttwo.png" alt="" />
                     <b>Hands-On Python & R In Data Science</b>
-                    <div class="cart1data">
+                    <div class="cart1-data">
                         <span id="public"> <i class="fa fa-users" aria-hidden="true"></i>
                             1,45,690</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span id="months"><i class="fa-solid fa-clock"></i> &nbsp; 4
                             monts</span>
                     </div>
-                    <a href="#"> <button class="addbtn">
+                    <a href="#"> <button class="add-btn">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </button>
                     </a>
@@ -124,26 +123,26 @@
                 <div class="course-card card-2">
                     <img src="./assets/images/cart1.png" alt="img" />
                     <b>Science and Machine Learning Bootcamp</b>
-                    <div class="cart1data">
+                    <div class="cart1-data">
                         <span id="public"> <i class="fa fa-users" aria-hidden="true"></i>
                             1,45,690</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span id="months"><i class="fa-solid fa-clock"></i> &nbsp; 4
                             monts</span>
                     </div>
-                    <a href="#"><button class="addbtn" id="blueaddtocart">
+                    <a href="#"><button class="add-btn" id="blueaddtocart">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </button></a>
                 </div>
                 <div class="course-card card-3">
                     <img src="./assets/images/cartthree.png" alt="img" />
                     <b>The Python Mega Course:Real Applications</b>
-                    <div class="cart1data">
+                    <div class="cart1-data">
                         <span id="public"> <i class="fa fa-users" aria-hidden="true"></i>
                             1,45,690</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span id="months"><i class="fa-solid fa-clock"></i> &nbsp; 4
                             monts</span>
                     </div>
-                    <a href="#"><button class="addbtn">
+                    <a href="#"><button class="add-btn">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </button></a>
                 </div>
@@ -151,19 +150,19 @@
         </section>
         <!----- how our online public school works sectionend----------- -->
         <!-- features section starts here --------------------------------------------------- -->
-        <section class="container">
-            <div class="features">
-                <div class="transform">
+        <section>
+            <div class="features-container">
+                <div class="features-heading">
                     <div>
                         <h2>Transform your life <br> through education </h2>
                     </div>
                     <p>Ariel Hocsman launched a new career in software development by taking courses on
                         Besnik. What will you be able to do?</p>
                     <div>
-                        <a href="#"><button id="getstart"> Get Started </button></a>
+                        <a href="#"><button id="hero-btn"> Get Started </button></a>
                     </div>
                 </div>
-                <div class="lectureimg">
+                <div class="features-img">
                     <img src="./assets/images/lectureimage.png" alt="img ">
 
                 </div>
@@ -171,13 +170,13 @@
         </section>
         <!-- features section ends here --------------------------------------------------- -->
         <!-- testimonial section starts here --------------------------------------- -->
-        <section class="container">
-            <div class="reviews">
-                <div class="content">
+        <section>
+            <div class="review-section-container">
+                <div class="review-heading">
                     <h2>Transform your life through education</h2>
                 </div>
-                <div class="comments">
-                    <div class="coment1">
+                <div class="review-comments">
+                    <div class="review-1">
                         <b>“Love mathematics because of Besnik Academy”</b>
                         <p>"The curriculum was directly targeted toward applied techniques with high profile
                             projects
@@ -185,7 +184,7 @@
                             datasets with industry partners. It helped me achieve my career transition goal."</p>
                         <img src="./assets/images/coment1.png" alt="comment">
                     </div>
-                    <div class="coment2">
+                    <div class="review-2">
                         <b>“There is so much to see and do all over world”</b>
                         <p>"The curriculum was directly targeted toward applied techniques with high profile
                             projects
@@ -198,67 +197,66 @@
         </section>
         <!-- testimonial sectionn end here --------------------------------------------  -->
         <!-- pricing products section starts here ----------------------------------------------------------------- -->
-        <section class="container">
-            
-                <div class="pricing">
-                    <div class="pricehead">
-                        <h2> Transform your life through education</h2>
-                        <div class="priceheadmainbtn"> <button id="pbtn"> Upgrade Now</button></div>
+        <section>
+            <div class="pricing-container">
+                <div class="pricing-header">
+                    <h2> Transform your life through education</h2>
+                    <div class="pricing-main-btn"> <button id="pbtn"> Upgrade Now</button></div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricetag-1">
+                        <div class="card-box">
+                            <div id="bluebox-1"> Regular</div>
+                            <div id="amount"><sup>$</sup> 65 </div>
+                            <div id="points-cover-1">
+                                <ul>
+                                    <li>1 Day event</li>
+                                    <li>1 Speaker</li>
+                                    <li>Interaction Session</li>
+                                    <li>35 classes</li>
+                                </ul>
+                            </div>
+                            <div id="buyplan"><a href="#"><button id="planbtn"> Buy plan</button> </a></div>
+                        </div>
                     </div>
-                    <div class="pricecard">
-                        <div class="pricetag1">
-                            <div class="cardbox">
-                                <div id="bluebox"> Regular</div>
-                                <div id="nintyfive"><sup>$</sup> 65 </div>
-                                <div id="pointscover">
-                                    <ul>
-                                        <li>1 Day event</li>
-                                        <li>1 Speaker</li>
-                                        <li>Interaction Session</li>
-                                        <li>35 classes</li>
-                                    </ul>
-                                </div>
-                                <div id="buyplan"><a href="#"><button id="planbtn"> Buy plan</button> </a></div>
+                    <div class="pricetag-2">
+                        <div class="card-box">
+                            <div id="bluebox2"> Medium</div>
+                            <div id="amount"><sup>$</sup> 95 </div>
+                            <div id="points-cover-2">
+                                <ul>
+                                    <li>1 Day event</li>
+                                    <li>1 Speaker</li>
+                                    <li>Interaction Session</li>
+                                    <li>65 classes</li>
+                                </ul>
                             </div>
+                            <div id="buyplan2"> <a href="#"><button id="planbtn2"> Buy plan</button> </a></div>
                         </div>
-                        <div class="pricetag2">
-                            <div class="cardbox">
-                                <div id="bluebox2"> Medium</div>
-                                <div id="nintyfive"><sup>$</sup> 95 </div>
-                                <div id="pointscover2">
-                                    <ul>
-                                        <li>1 Day event</li>
-                                        <li>1 Speaker</li>
-                                        <li>Interaction Session</li>
-                                        <li>65 classes</li>
-                                    </ul>
-                                </div>
-                                <div id="buyplan2"> <a href="#"><button id="planbtn2"> Buy plan</button> </a></div>
+                    </div>
+                    <div class="pricetag-3">
+                        <div class="card-box">
+                            <div id="bluebox3"> Premium</div>
+                            <div id="amount"><sup>$</sup> 445 </div>
+                            <div id="points-cover-3">
+                                <ul>
+                                    <li>1 Day event</li>
+                                    <li>1 Speaker</li>
+                                    <li>Interaction Session</li>
+                                    <li>65 classes</li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="pricetag3">
-                            <div class="cardbox">
-                                <div id="bluebox3"> Premium</div>
-                                <div id="nintyfive"><sup>$</sup> 445 </div>
-                                <div id="pointscover3">
-                                    <ul>
-                                        <li>1 Day event</li>
-                                        <li>1 Speaker</li>
-                                        <li>Interaction Session</li>
-                                        <li>65 classes</li>
-                                    </ul>
-                                </div>
-                                <div id="buyplan3"><a href="#"><button id="planbtn3"> Buy plan</button> </a></div>
-                            </div>
+                            <div id="buyplan3"><a href="#"><button id="planbtn3"> Buy plan</button> </a></div>
                         </div>
                     </div>
                 </div>
-            
+            </div>
+
         </section>
         <!-- pricing div ends here  ------------------------------------------------------------------->
         <!-- footer section start here  -->
-        <footer class="container" id="contact">
-            <div class="footer">
+        <footer id="contact">
+            <div class="footer-container">
                 <div><a href="#"> <img src="./assets/images/logo.png" alt="logo"> </a><br>
                     <p>Our motto to fulfill customer demand by making them satisfied with growing their business.
                     </p>
@@ -293,16 +291,17 @@
                             <b>Get our app</b>
                         </li>
                         <li><img src="./assets/images/footer1.png" alt="app"></li>
-                        <li> <img src="./assets/images/footer2.png" alt="app" style="margin-top: 10px;"></li>
+                        <li> <img src="./assets/images/footer2.png" alt="app" style="margin-top: 1rem;"></li>
                 </div>
         </footer>
         <hr>
         <br>
-        <div class="container">
+        <div>
             <p id="copyright">Copyright Besnik 2021 All rights reserved.</p>
         </div>
         <br>
     </div>
-    
+
 </body>
+
 </html>
