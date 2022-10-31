@@ -227,7 +227,7 @@ nav a {
   margin-bottom: 5px;
   margin-left: 20px;
 }
-.coursehead h2 {
+.course-head h2 {
   grid-area: heading;
 }
 .card-1 {
@@ -286,6 +286,9 @@ nav a {
   
 }
 
+#courses{
+  margin: 5rem 0;
+}
 /* features section starts here --------------------------------------------------------------------- */
 
 .features-container{
@@ -294,7 +297,9 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
+}
+#features{
+  display: grid;
 }
 .features-container h2 {
   margin: 2rem 0;
@@ -575,14 +580,11 @@ li:hover {
   .universities-container{
     grid-template-rows: 20% 1fr;
     grid-template-columns: 1fr;
-    margin-top: 5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .university-content {
-    margin-top: 3rem;
-  }
+  
   .university-logos {
     margin-top: 2rem;
   }
@@ -590,7 +592,7 @@ li:hover {
   .learning-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 20%);
-    margin-top: 0.1rem;
+    
     grid-template-areas:
       "how"
       "imga"
@@ -607,6 +609,7 @@ li:hover {
     margin: 0 auto;
   }
   /* course container start here  */
+  
   .course-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -622,8 +625,8 @@ li:hover {
     justify-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 29rem;
-    margin-bottom: -45rem;
+    margin-top: 30rem;
+  
   }
 
   .course-btn {
@@ -631,7 +634,7 @@ li:hover {
     grid-row-end: 3;
     grid-area: button;
   }
-
+  
   .course-card {
     margin-left: 0;
   }
@@ -640,15 +643,19 @@ li:hover {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 55rem;
+    gap: 1rem;
+    
   }
   .features-container h2 {
-    margin: 2rem 0;
+    margin-top: 2rem 0;
   }
   .features-container > p {
-    margin: 2.5rem 0;
+    margin-top: 2.5rem 0;
   }
+  #features{
+     margin-top: 20rem ; 
+    display: grid;
+    }
   /* comments part media start here  */
   .review-comments{
     flex-direction: column;
